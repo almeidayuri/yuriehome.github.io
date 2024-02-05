@@ -1,0 +1,700 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 2200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+header {
+    background-color: #333;
+    padding:10px 0;
+}
+.logo{
+    padding-top: 10px;
+    width:50%;
+    margin-left: auto;
+}
+.logo img {
+    width:250px;
+    height:230px;
+    filter: drop-shadow(5px 5px 5px #222);
+    max-width: 100%;
+    height: auto;
+    
+}
+.menu {
+    padding-top: 30px;
+    width: 50%;
+    text-align: right;
+}
+.menu a{
+    color: whitesmoke;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+    font-weight: bold;
+    margin-right: 3px;
+    transition: color 0.3s;
+}
+.menu a:hover {
+    color: orangered;
+}
+.body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+.image-section {
+    background-color: none;
+    text-align: center;
+    padding: 2px 0;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites da div */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+}
+
+.image-section img {
+    filter: drop-shadow(5px 5px 5px #222);
+    max-width: 60%;
+    height: auto;
+    margin: 0 auto;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+}
+.image-section img:hover{
+    transform: scale(1.1);
+}
+
+.introducao{
+    text-align: center;
+    display: flex;
+    padding-bottom: 30px;
+    font-size: 3.5em;
+    padding-left: 360px;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+    font-weight: bold;
+}
+.highlight-letter {
+    color: orangered
+}
+.text1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    font-size: 2.0em;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px black;
+    font-weight: bold;
+}
+
+.text1n{
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width:100%;
+    font-size: 1.5em;
+    padding-left: 360px;
+    padding-right: 360px;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px black;
+}
+.text2 {
+    background-color: #333;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}
+
+.text {
+    display: inline-block; /* Permite o alinhamento horizontal */
+    margin: 0 10px; /* Espaçamento entre os textos */
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+    font-size: 1.5em;
+}
+.titulos{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width:100%;
+    font-size: 2.5em;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+    font-weight: bold;
+}
+.subtitulo{
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+.slide1 img {
+    filter: drop-shadow(5px 5px 5px #222);
+    padding-top: 50px;
+    margin: auto;
+    text-align: center;
+    max-width: 700px;
+    height: auto;
+}
+.slide1 {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.slide2 img {
+    filter: drop-shadow(5px 5px 5px #222);
+    padding-top: 50px;
+    margin: auto;
+    text-align: center;
+    max-width: 500px;
+    height: auto;
+
+}
+
+.slide2 {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.slide3 img {
+    filter: drop-shadow(5px 5px 5px #222);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: auto;
+    text-align: center;
+    max-width: 500px;
+    height: auto;
+}
+.slide3 {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide4 img {
+    filter: drop-shadow(5px 5px 5px #222);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: auto;
+    text-align: center;
+    max-width: 500px;
+    height: auto;
+}
+.slide4 {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconServices{
+    filter: drop-shadow(5px 5px 5px #222);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconServices img {
+    max-width: 200px;
+}
+.container {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: none /* Adicione borda conforme necessário */
+}
+
+.text-container {
+    flex-grow: 10;
+    padding-left: 20px;
+    padding-right: 20px; /* Espaçamento entre texto e imagem */
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+    font-size: 4.0em;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.image-container img {
+    padding-left: 150px;
+    max-width: 800px;
+    height: auto;
+    filter: drop-shadow(5px 5px 5px #222);
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites da div */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+}
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.button-container {
+    filter: drop-shadow(5px 5px 5px #222);
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+    font-size: 1.5em;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+.button-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orangered; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none;
+    border-radius: 50px;
+    transition: transform 0.3s ease; 
+}
+.button-container :hover {
+    transform: scale(1.1);
+}
+
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: none /* Adicione borda conforme necessário */
+}
+
+.text-container2 {
+    flex-grow: 10;
+    padding-left: 500px;
+    padding-right: 5px; /* Espaçamento entre texto e imagem */
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+    font-size: 4.0em;
+    font-weight: bold;
+}
+
+
+.image-container2 img {
+    max-width: 800px;
+    height: auto;
+    filter: drop-shadow(5px 5px 5px #222);
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites da div */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+}
+.image-container2 img:hover {
+    transform: scale(1.1);
+}
+
+.button-container2 {
+    filter: drop-shadow(5px 5px 5px #222);
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+    font-size: 1.5em;
+    overflow: hidden; 
+    transition: transform 0.3s ease;
+}
+
+.button-container2 a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orangered; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+.button-container2 :hover {
+    transform: scale(1.1);
+}
+.advise {
+    color: white;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: none /* Adicione borda conforme necessário */
+}
+
+.text-advise{
+    flex-grow: 10;
+    padding-left: 20px;
+    padding-right: 100px; /* Espaçamento entre texto e imagem */
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+    font-size: 2.0em;
+}
+
+
+.image-advise img {
+    max-width: 500px;
+    height: auto;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.button-advise {
+    filter: drop-shadow(5px 5px 5px #222);
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+    font-size: 2.0em;
+}
+
+.button-advise a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orangered; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none;
+    border-radius: 50px;
+}
+.button-advise :hover {
+    color: black;
+}
+
+.ehome {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.text-box {
+    text-align: center;
+    font-size: 1.5em;
+    filter: drop-shadow(2px 2px 2px #222);
+}
+
+.text-box h2 {
+    color: orangered;
+    margin-bottom: 10px;
+}
+
+.image-box {
+    padding: 10px;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites da div */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+}
+.image-box img {
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+}
+
+.image-box:hover {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% ao passar o mouse */
+}
+
+.image-box:hover img {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% ao passar o mouse */
+}
+
+.botaozap {
+    filter: drop-shadow(5px 5px 5px #222);
+    font-size: 2em;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: orangered;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites da div */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+    z-index: 10;
+}
+.botaozap:hover {
+    filter: drop-shadow(8px 8px 8px aqua);
+    transform: scale(1.1);
+}
+
+.botaozap img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites da div */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+}
+.botaoGaleria {
+    filter: drop-shadow(5px 5px 5px #222);
+    font-size: 2em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: orangered;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites da div */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+    z-index: 10;
+}
+.botaoGaleria:hover {
+    filter: drop-shadow(8px 8px 8px aqua);
+    transform: scale(1.1);
+}
+
+.botaoGaleria img {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites da div */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+    margin-bottom: 10px;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.footer-text {
+    display: inline-block;
+    margin-right: 100px;
+    filter: drop-shadow(5px 5px 5px #222);
+    font-size: 1.5em;
+}
+.footer-text:hover{
+    filter: drop-shadow(5px 5px 5px orangered);
+
+}
+.footer-button {
+    display: block;
+    margin-top: 10px;
+}
+.footer-button:hover{
+    filter: drop-shadow(8px 8px 8px aqua);
+
+}
+.footer-text img {
+    max-width: 50px;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites da div */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+}
+.footer-text img:hover {
+    transform: scale(1.1);
+}
+
+
+ /* Estilizando a barra de rolagem */
+ ::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor de fundo da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor da "alça" da barra de rolagem */
+    border-radius: 6px; /* Borda arredondada */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor ao passar o mouse sobre a "alça" */
+}
+
+/* Estilizando a barra de rolagem horizontal */
+::-webkit-scrollbar-horizontal {
+    height: 12px; /* Altura da barra de rolagem horizontal */
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #888;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #555;
+}
+.iconServices :hover {
+    filter: drop-shadow(2px 3px 3px aqua);
+}
+.brands {
+    text-align: center;
+    background-color: #333;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites da div */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+}
+.brands img {
+    width: 500px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+}
+.brands img:hover {
+    filter: drop-shadow(2px 3px 3px aqua);
+    transform: scale(1.1);
+}
+.textabout {
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+    font-size: 4.0em;
+    font-weight: bold;
+}
+.aboutText {
+    text-align: center;
+    font-size: 1.5em;
+}
+.textAutomacao {
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+    font-size: 4.0em;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.textAut1 {
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 3px black;
+}
+.textAut2 {
+    text-align: center;
+    font-size: 1.5em;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites da div */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+    text-shadow: 2px 2px 3px black;
+}
+.textAut2:hover {
+    filter: drop-shadow(2px 3px 3px orangered);
+    text-shadow: 1px 1px 2px black;
+    transform: scale(1.1);
+}
+.botaoAutomacao {
+    filter: drop-shadow(5px 5px 5px #222);
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+    font-size: 1.5em;
+    padding: 50px;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites da div */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+}
+
+.botaoAutomacao a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orangered; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    
+}
+.botaoAutomacao :hover {
+    transform: scale(1.1);
+}
+.botaoAutomacao a:hover {
+    transform: scale(1.1);
+}
+.quote{
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites da div */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+}
+.quote:hover{
+    transform: scale(1.1);
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.contact-text {
+    text-align: center;
+    font-size: 2em;
+}
+.gallery {
+    background-color: transparent;
+    padding-left: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaço entre as imagens */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.gallery img {
+    filter: drop-shadow(2px 3px 3px black);
+    text-shadow: 1px 1px 2px black;
+    margin-top: 10px;
+    width: calc(33.33% - 10px); /* 33.33% para 3 imagens na horizontal, subtraindo o espaço entre elas */
+    margin-bottom: 10px; /* Espaço abaixo de cada imagem */
+    max-width: 400px;
+    max-height: 300px;
+    transition: transform 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+.botaoGaleria {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    color: inherit;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+}
+
+.galeria1 {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espaço entre os itens */
+}
+
+.galeria1 .item {
+    flex: 1 1 200px; /* Flexibilidade do item */
+    max-width: 500px; /* Largura máxima do item */
+}
+
+.galeria1 .item img,
+.galeria1 .item video {
+    width: 100%; /* Assegura que a imagem ou vídeo preencha o espaço do item */
+    height: auto; /* Mantém a proporção da imagem ou vídeo */
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
