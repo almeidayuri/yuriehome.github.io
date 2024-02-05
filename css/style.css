@@ -698,3 +698,49 @@ header {
     max-width: 100%;
     max-height: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 100%; /* Para telas menores, a largura da logo ocupará 100% */
+        text-align: center; /* Centralizar o texto dentro da logo */
+    }
+
+    .menu {
+        width: 100%; /* O menu ocupará 100% da largura em telas menores */
+        text-align: center; /* Centralizar os itens do menu */
+        padding-top: 20px; /* Diminuir o espaçamento superior do menu */
+    }
+
+    .text1n, .textAut1 {
+        padding-left: 20px; /* Diminuir o padding esquerdo para melhorar a legibilidade */
+        padding-right: 20px; /* Diminuir o padding direito para melhorar a legibilidade */
+    }
+
+    .slide1 img, .slide2 img, .slide3 img, .slide4 img {
+        max-width: 100%; /* Assegurar que as imagens dos slides se ajustem à largura da tela */
+    }
+
+    .footer {
+        flex-direction: column; /* Alterar a direção dos itens do rodapé para uma coluna */
+        text-align: center; /* Centralizar o texto do rodapé */
+    }
+
+    .footer-text {
+        margin-right: 0; /* Remover a margem direita para centralizar o texto */
+        margin-bottom: 20px; /* Adicionar espaço entre os itens do rodapé */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .introducao {
+        font-size: 2.5em; /* Reduzir o tamanho da fonte na introdução para telas muito pequenas */
+    }
+
+    .text1 {
+        font-size: 1.2em; /* Reduzir o tamanho da fonte para telas muito pequenas */
+    }
+
+    .footer-text {
+        font-size: 1.2em; /* Reduzir o tamanho da fonte para telas muito pequenas */
+    }
+}
